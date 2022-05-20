@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="mainHeading"><i class="hidden" id="back-btn"></i>Whether app</header>
+        <section class="input-portion" id="input_portion">
+            <p class="hidden" id="msg">Please enter a valid city name.</p>
+            <br>
+            <input type="text" class="input" id="input_city" placeholder="Enter city name">
+            <br>
+            <div class="divider">or</div>
+            <button class="input" id="btn_location">Get Device Location</button>
+        </section>
+        <section class="hidden" id="weather_portion">
+            <img class="weather-img" id="weather_img" src="" alt="weather icon">
+            <div class="temp">
+                <span class="numb" id="temp">13</span>
+                <span class="deg">°</span>C
+            </div>
+            <div class="weather" id="weather"></div>
+            <div class="location">
+                <i class="bx bx-map"></i>
+                <span id="location"></span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="details">
+                        <div class="temp" id="inner-tmp">
+                            <span class="numb" id="temp2">13</span>
+                            <span class="deg">°</span>C
+                        </div>
+                        <p class="feel-para">Feels like</p>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="details">
+                        <span class="numb" id="humidity">13</span>%
+                        <p class="humidity-para">Humidity</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
